@@ -1,0 +1,15 @@
+{
+  "name": "game-character-enrichment",
+  "version": "1.0.0",
+  "description": "Anime character art pipeline for PitchDreams game ecosystem",
+  "type": "module",
+  "scripts": {
+    "process": "node scripts/process-image.mjs",
+    "deploy": "node scripts/deploy-assets.mjs",
+    "spritesheet": "node scripts/generate-spritesheet.mjs",
+    "batch": "node scripts/process-image.mjs --all && node scripts/deploy-assets.mjs --all"
+  },
+  "dependencies": {
+    "sharp": "^0.33.2"
+  }
+}

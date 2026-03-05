@@ -1,0 +1,91 @@
+{
+  "_description": "Reusable animation sequence presets for game events. Each sequence chains multiple cut-in templates or standalone effects.",
+  "sequences": {
+    "match_goal_scored": {
+      "name": "Goal Scored Sequence",
+      "description": "Full goal celebration: flash → scorer cut-in → replay feel → celebration",
+      "steps": [
+        { "template": "goal_celebration", "character": "{scorer}", "delay_ms": 0 },
+        { "effect": "confetti_burst", "duration_ms": 3000, "delay_ms": 1500 },
+        { "effect": "crowd_roar_overlay", "duration_ms": 2000, "delay_ms": 1800 }
+      ]
+    },
+    "match_kickoff": {
+      "name": "Match Kickoff",
+      "description": "Starting lineup reveal and whistle",
+      "steps": [
+        { "effect": "stadium_pan", "duration_ms": 2000 },
+        { "template": "player_intro", "character": "{star_player}", "delay_ms": 1500 },
+        { "effect": "whistle_flash", "duration_ms": 500, "delay_ms": 3500 }
+      ]
+    },
+    "player_substitution": {
+      "name": "Substitution",
+      "description": "Player coming on/off with dramatic swap",
+      "steps": [
+        { "template": "dramatic_moment", "character": "{player_off}", "delay_ms": 0 },
+        { "effect": "swap_transition", "duration_ms": 500, "delay_ms": 2000 },
+        { "template": "player_intro", "character": "{player_on}", "delay_ms": 2500 }
+      ]
+    },
+    "rivalry_encounter": {
+      "name": "Rivalry Encounter",
+      "description": "Two rivals face off before a big moment",
+      "steps": [
+        { "template": "rivalry_clash", "character_left": "{protagonist}", "character_right": "{rival}", "delay_ms": 0 },
+        { "effect": "tension_buildup", "duration_ms": 1500, "delay_ms": 2500 }
+      ]
+    },
+    "season_finale": {
+      "name": "Season Finale",
+      "description": "End-of-season dramatic reveal with full team showcase",
+      "steps": [
+        { "effect": "montage_flash", "duration_ms": 3000, "characters": "{all_starters}" },
+        { "template": "player_intro", "character": "{mvp}", "delay_ms": 3000 },
+        { "effect": "trophy_reveal", "duration_ms": 2000, "delay_ms": 6000 },
+        { "effect": "fireworks", "duration_ms": 4000, "delay_ms": 7000 }
+      ]
+    },
+    "parent_drama_eruption": {
+      "name": "Parent Drama Eruption",
+      "description": "Dramatic parent confrontation cut-in",
+      "steps": [
+        { "effect": "tension_crack", "duration_ms": 500 },
+        { "template": "dramatic_moment", "character": "{angry_parent}", "delay_ms": 300 },
+        { "effect": "dialogue_slam", "text": "{drama_line}", "duration_ms": 1500, "delay_ms": 2000 }
+      ]
+    }
+  },
+  "standalone_effects": {
+    "confetti_burst": {
+      "type": "particle",
+      "count": 100,
+      "colors": ["#ffd700", "#ff2d78", "#00d4ff", "#39ff14", "#ffffff"],
+      "gravity": 0.3,
+      "spread": 360
+    },
+    "screen_crack": {
+      "type": "overlay",
+      "svg_pattern": "crack_web",
+      "color": "#ffffff",
+      "opacity": 0.8,
+      "heal_duration_ms": 500
+    },
+    "stadium_pan": {
+      "type": "background",
+      "motion": "slow_pan_up",
+      "overlay": "ambient_particles"
+    },
+    "whistle_flash": {
+      "type": "flash",
+      "color": "#ffffff",
+      "pattern": "double_burst"
+    },
+    "tension_buildup": {
+      "type": "ambient",
+      "vignette_intensity": 0.6,
+      "heartbeat_pulse": true,
+      "desaturation": 0.3
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "characters": [],
+  "_comment": "Character entries are added by the /character command. Schema: { key, name, role, archetype, gender, age, appearance: { hair_style, hair_color, eye_color, skin_tone, face_shape }, traits: [], prompt_used: string, created_at: ISO date, deployed_to: [] }"
+}

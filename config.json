@@ -1,0 +1,74 @@
+{
+  "_description": "Reusable configuration for the character enrichment pipeline. Edit this to adapt to any game project.",
+  "pipeline": {
+    "raw_dir": "raw",
+    "processed_dir": "processed",
+    "characters_dir": "characters",
+    "prompts_dir": "prompts",
+    "animations_dir": "animations"
+  },
+  "image_variants": {
+    "portrait": { "width": 400, "height": 560, "quality": 85, "description": "Main character portrait (2x for 200x280 display)" },
+    "card": { "width": 300, "height": 420, "quality": 85, "description": "Legend/scout card format" },
+    "thumb": { "width": 80, "height": 80, "quality": 90, "description": "Roster list / chat bubble thumbnail" },
+    "square": { "width": 256, "height": 256, "quality": 85, "description": "Social / marketing square crop" },
+    "banner": { "width": 600, "height": 200, "quality": 80, "description": "Wide banner for headers" }
+  },
+  "deploy_targets": {
+    "sim": {
+      "name": "pitch-dreams-ultimate-manager-sim",
+      "path": "/Users/lossa/pitch-dreams-ultimate-manager-sim/assets/images/characters",
+      "variants": ["portrait", "card", "thumb", "full"],
+      "format": "webp"
+    },
+    "parent": {
+      "name": "pro-parent-soccer-league",
+      "path": "/Users/lossa/pro-parent-soccer-league/assets/images/characters",
+      "variants": ["portrait", "thumb", "full"],
+      "format": "webp"
+    },
+    "landing": {
+      "name": "pitch-dreams-landingsite",
+      "path": "/Users/lossa/pitch-dreams-landingsite/public/characters",
+      "variants": ["portrait", "square", "banner"],
+      "format": "webp"
+    }
+  },
+  "style": {
+    "aesthetic": "Blue Lock / Captain Tsubasa anime",
+    "background_color": "#020814",
+    "neon_primary": "#00d4ff",
+    "neon_accent": "#ff2d78",
+    "neon_energy": "#4d7cff",
+    "neon_highlight": "#39ff14",
+    "aspect_ratio": "5:7",
+    "min_resolution": 1024
+  },
+  "ai_generators": {
+    "gemini": {
+      "name": "Google Gemini",
+      "notes": "Use Imagen 3 model. Paste prompt directly. Works well with detailed descriptions.",
+      "max_prompt_length": 4000,
+      "supports_negative_prompt": false,
+      "best_for": "general character art"
+    },
+    "midjourney": {
+      "name": "Midjourney",
+      "notes": "Prefix prompt with /imagine. Add --ar 5:7 --style raw --s 250 at end.",
+      "suffix": "--ar 5:7 --style raw --s 250 --niji 6",
+      "best_for": "highest quality anime art"
+    },
+    "stable_diffusion": {
+      "name": "Stable Diffusion / ComfyUI",
+      "notes": "Use anime checkpoint (e.g., Anything V5, Counterfeit). Set CFG 7-9.",
+      "supports_negative_prompt": true,
+      "best_for": "batch generation, custom models"
+    },
+    "dall_e": {
+      "name": "DALL-E 3",
+      "notes": "Simplify prompt slightly. DALL-E prefers natural language over tag-style.",
+      "max_prompt_length": 4000,
+      "best_for": "quick iterations"
+    }
+  }
+}

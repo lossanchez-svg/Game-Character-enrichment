@@ -1,0 +1,191 @@
+{
+  "player_archetypes": {
+    "speedster": {
+      "label": "Speedster",
+      "visual_traits": ["lean athletic build", "windswept hair", "sharp determined eyes", "dynamic forward-leaning pose"],
+      "hair_suggestions": ["spiky_wild", "short_clean", "ponytail"],
+      "expression": "fierce",
+      "aura_color": "#00d4ff",
+      "personality_keywords": ["explosive", "restless", "lightning-fast"],
+      "prompt_accent": "motion blur streaks, wind effect on hair and jersey"
+    },
+    "technician": {
+      "label": "Technician",
+      "visual_traits": ["calm confident posture", "analytical gaze", "neat well-kept appearance"],
+      "hair_suggestions": ["medium_swept", "short_clean", "bob_sharp"],
+      "expression": "calm_focused",
+      "aura_color": "#4d7cff",
+      "personality_keywords": ["precise", "cerebral", "elegant"],
+      "prompt_accent": "geometric light patterns, clean lines radiating outward"
+    },
+    "tank": {
+      "label": "Tank",
+      "visual_traits": ["broad shoulders", "powerful build", "intimidating presence", "square jaw"],
+      "hair_suggestions": ["buzz_fade", "undercut", "mohawk"],
+      "expression": "determined",
+      "aura_color": "#ff6b00",
+      "personality_keywords": ["unstoppable", "physical", "wall-like"],
+      "prompt_accent": "impact cracks, ground-shaking energy, heavy shadow"
+    },
+    "brain": {
+      "label": "Brain",
+      "visual_traits": ["thoughtful expression", "glasses optional", "observant eyes", "composed stance"],
+      "hair_suggestions": ["medium_swept", "short_clean", "long_flowing"],
+      "expression": "focused",
+      "aura_color": "#9b59b6",
+      "personality_keywords": ["strategic", "quiet genius", "sees everything"],
+      "prompt_accent": "chess-piece motifs, analytical overlay, subtle glow around eyes"
+    },
+    "late_bloomer": {
+      "label": "Late Bloomer",
+      "visual_traits": ["average build with hidden potential", "earnest eyes", "slightly messy appearance"],
+      "hair_suggestions": ["messy", "spiky_forward", "curly_volume"],
+      "expression": "determined",
+      "aura_color": "#2ecc71",
+      "personality_keywords": ["underestimated", "growing", "raw potential"],
+      "prompt_accent": "emerging light from within, cracking shell effect, sunrise glow"
+    },
+    "captain": {
+      "label": "Captain",
+      "visual_traits": ["commanding presence", "armband detail", "natural leader posture", "strong eye contact"],
+      "hair_suggestions": ["short_clean", "medium_swept", "undercut"],
+      "expression": "confident",
+      "aura_color": "#f1c40f",
+      "personality_keywords": ["inspiring", "responsible", "unshakeable"],
+      "prompt_accent": "crown-like light above head, golden aura, rally energy"
+    },
+    "keeper": {
+      "label": "Goalkeeper",
+      "visual_traits": ["tall frame", "long reach visible", "keeper gloves", "alert ready stance"],
+      "hair_suggestions": ["short_clean", "spiky_wild", "buzz_fade"],
+      "expression": "intense",
+      "aura_color": "#e74c3c",
+      "personality_keywords": ["last line", "reflexive", "commanding box presence"],
+      "prompt_accent": "barrier/shield effect, reaction lines, diving pose energy"
+    },
+    "flair_merchant": {
+      "label": "Flair Merchant",
+      "visual_traits": ["stylish appearance", "confident smirk", "relaxed but ready pose", "expressive eyes"],
+      "hair_suggestions": ["long_flowing", "braided", "twin_tails", "afro_shaped"],
+      "expression": "smirking",
+      "aura_color": "#ff2d78",
+      "personality_keywords": ["showboat", "creative", "unpredictable"],
+      "prompt_accent": "sparkle effects, rainbow accents, theatrical lighting"
+    },
+    "grinder": {
+      "label": "Grinder",
+      "visual_traits": ["battle-worn look", "bandage details", "sweat drops", "never-quit eyes"],
+      "hair_suggestions": ["buzz_fade", "short_clean", "messy"],
+      "expression": "shouting",
+      "aura_color": "#e67e22",
+      "personality_keywords": ["relentless", "tireless", "blue-collar"],
+      "prompt_accent": "dust/dirt particles, battle damage effects, intense sweat detail"
+    },
+    "multi_sport": {
+      "label": "Multi-Sport Athlete",
+      "visual_traits": ["versatile athletic build", "hybrid gear hints", "adaptable expression"],
+      "hair_suggestions": ["ponytail", "short_clean", "curly_volume"],
+      "expression": "confident",
+      "aura_color": "#1abc9c",
+      "personality_keywords": ["adaptable", "cross-trained", "natural athlete"],
+      "prompt_accent": "multi-colored energy trails, sport icon silhouettes in background"
+    },
+    "transfer": {
+      "label": "Transfer Star",
+      "visual_traits": ["polished appearance", "slightly aloof", "expensive-looking gear", "foreign flair"],
+      "hair_suggestions": ["medium_swept", "long_flowing", "bob_sharp"],
+      "expression": "calm_focused",
+      "aura_color": "#3498db",
+      "personality_keywords": ["mysterious newcomer", "proven talent", "adjusting"],
+      "prompt_accent": "arrival spotlight, unknown origin mystery, star quality shimmer"
+    },
+    "reluctant_talent": {
+      "label": "Reluctant Talent",
+      "visual_traits": ["disinterested pose", "casual stance", "unfocused gaze that sharpens in action"],
+      "hair_suggestions": ["messy", "long_flowing", "spiky_forward"],
+      "expression": "half_lidded",
+      "aura_color": "#95a5a6",
+      "personality_keywords": ["gifted but unmotivated", "sleeping giant", "untapped"],
+      "prompt_accent": "dormant power effect, lazy sparkles, sudden intensity shift"
+    }
+  },
+  "npc_archetypes": {
+    "coach": {
+      "label": "Coach",
+      "visual_traits": ["mature confident look", "coaching attire", "whistle optional", "tactical clipboard"],
+      "expression": "confident",
+      "aura_color": "#c0392b",
+      "prompt_accent": "tactical diagram overlay, authority presence, sideline atmosphere"
+    },
+    "parent_supportive": {
+      "label": "Supportive Parent",
+      "visual_traits": ["warm expression", "casual sideline attire", "encouraging posture"],
+      "expression": "warm_smile",
+      "aura_color": "#27ae60",
+      "prompt_accent": "warm lighting, cheering energy, supportive background"
+    },
+    "parent_overbearing": {
+      "label": "Overbearing Parent",
+      "visual_traits": ["intense expression", "leaning forward aggressively", "pointing or gesturing"],
+      "expression": "shouting",
+      "aura_color": "#e74c3c",
+      "prompt_accent": "pressure lines, heat distortion, red-tinted atmosphere"
+    },
+    "parent_chill": {
+      "label": "Chill Parent",
+      "visual_traits": ["relaxed posture", "coffee cup", "sunglasses", "laid-back smile"],
+      "expression": "smirking",
+      "aura_color": "#3498db",
+      "prompt_accent": "cool breeze effect, relaxed atmosphere, casual vibes"
+    },
+    "referee": {
+      "label": "Referee",
+      "visual_traits": ["black and yellow stripes", "authoritative stance", "whistle in mouth", "card in hand"],
+      "expression": "stern",
+      "aura_color": "#f39c12",
+      "prompt_accent": "whistle sound lines, authority glow, impartial presence"
+    },
+    "scout": {
+      "label": "Scout",
+      "visual_traits": ["observant eyes behind sunglasses", "notebook or tablet", "inconspicuous attire"],
+      "expression": "analytical",
+      "aura_color": "#7f8c8d",
+      "prompt_accent": "binocular/scope overlay, data analysis graphics, hidden observer"
+    }
+  },
+  "skin_palettes": [
+    { "key": "fair", "hex": "#FFE0BD" },
+    { "key": "light", "hex": "#F5C6A5" },
+    { "key": "medium_light", "hex": "#D4A76A" },
+    { "key": "medium", "hex": "#C68642" },
+    { "key": "medium_dark", "hex": "#A0622E" },
+    { "key": "dark", "hex": "#8D5524" },
+    { "key": "deep", "hex": "#6B3E1F" },
+    { "key": "rich_dark", "hex": "#4A2511" }
+  ],
+  "hair_colors": [
+    { "key": "black", "hex": "#1a1a2e" },
+    { "key": "dark_brown", "hex": "#3d2b1f" },
+    { "key": "brown", "hex": "#6b4226" },
+    { "key": "auburn", "hex": "#922b21" },
+    { "key": "blonde", "hex": "#d4a843" },
+    { "key": "platinum", "hex": "#e8e4d8" },
+    { "key": "red", "hex": "#c0392b" },
+    { "key": "blue", "hex": "#2874a6" },
+    { "key": "pink", "hex": "#e91e8c" },
+    { "key": "silver", "hex": "#bdc3c7" },
+    { "key": "green", "hex": "#1e8449" }
+  ],
+  "eye_colors": [
+    { "key": "brown", "hex": "#5D4037" },
+    { "key": "dark_brown", "hex": "#3E2723" },
+    { "key": "hazel", "hex": "#8D6E63" },
+    { "key": "blue", "hex": "#1565C0" },
+    { "key": "green", "hex": "#2E7D32" },
+    { "key": "amber", "hex": "#FF8F00" },
+    { "key": "violet", "hex": "#7B1FA2" },
+    { "key": "red", "hex": "#C62828" },
+    { "key": "gold", "hex": "#F9A825" },
+    { "key": "heterochromia", "hex": "mixed" }
+  ]
+}

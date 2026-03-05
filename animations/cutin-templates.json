@@ -1,0 +1,237 @@
+{
+  "_description": "Animation templates for dramatic cut-in sequences (Blue Lock / Captain Tsubasa style). These define animation configs that can be rendered by Framer Motion (React) or Canvas (vanilla JS).",
+  "templates": {
+    "goal_celebration": {
+      "name": "Goal Celebration Cut-in",
+      "description": "Character portrait slams in from the side with speed lines and flash",
+      "duration_ms": 2000,
+      "phases": [
+        {
+          "name": "flash",
+          "duration_ms": 100,
+          "effect": "screen_flash",
+          "color": "#ffffff",
+          "opacity": [0, 1, 0]
+        },
+        {
+          "name": "slide_in",
+          "duration_ms": 400,
+          "element": "portrait",
+          "from": { "x": "120%", "scale": 1.5, "rotation": -5 },
+          "to": { "x": "0%", "scale": 1.0, "rotation": 0 },
+          "easing": "easeOutExpo"
+        },
+        {
+          "name": "speed_lines",
+          "duration_ms": 800,
+          "element": "background",
+          "effect": "radial_speed_lines",
+          "color": "{aura_color}",
+          "count": 24,
+          "pulse": true
+        },
+        {
+          "name": "name_plate",
+          "duration_ms": 300,
+          "delay_ms": 400,
+          "element": "text",
+          "content": "{character_name}",
+          "from": { "x": "-100%", "opacity": 0 },
+          "to": { "x": "0%", "opacity": 1 },
+          "easing": "easeOutBack",
+          "style": { "font": "bold italic", "size": 32, "color": "#ffffff", "shadow": "{aura_color}" }
+        },
+        {
+          "name": "particles",
+          "duration_ms": 1200,
+          "effect": "burst_particles",
+          "type": "sparkle",
+          "count": 30,
+          "colors": ["{aura_color}", "#ffffff", "#ffd700"]
+        },
+        {
+          "name": "fade_out",
+          "duration_ms": 400,
+          "delay_ms": 1600,
+          "element": "all",
+          "to": { "opacity": 0 },
+          "easing": "easeInQuad"
+        }
+      ]
+    },
+    "dramatic_moment": {
+      "name": "Dramatic Moment",
+      "description": "Split-screen zoom with character reaction and slow-mo feel",
+      "duration_ms": 2500,
+      "phases": [
+        {
+          "name": "slow_zoom",
+          "duration_ms": 1000,
+          "element": "portrait",
+          "from": { "scale": 0.8, "opacity": 0.5, "filter": "blur(4px)" },
+          "to": { "scale": 1.0, "opacity": 1, "filter": "blur(0px)" },
+          "easing": "easeInOutCubic"
+        },
+        {
+          "name": "diagonal_split",
+          "duration_ms": 200,
+          "delay_ms": 800,
+          "effect": "diagonal_wipe",
+          "angle": 15,
+          "color": "{aura_color}"
+        },
+        {
+          "name": "eye_flash",
+          "duration_ms": 300,
+          "delay_ms": 1000,
+          "effect": "point_glow",
+          "position": "eyes",
+          "color": "{eye_color}",
+          "intensity": 2.0
+        },
+        {
+          "name": "impact_frame",
+          "duration_ms": 100,
+          "delay_ms": 1300,
+          "effect": "screen_shake",
+          "intensity": 8,
+          "decay": 0.9
+        },
+        {
+          "name": "aura_burst",
+          "duration_ms": 600,
+          "delay_ms": 1300,
+          "effect": "expanding_ring",
+          "color": "{aura_color}",
+          "rings": 3
+        },
+        {
+          "name": "hold_and_fade",
+          "duration_ms": 800,
+          "delay_ms": 1700,
+          "element": "all",
+          "to": { "opacity": 0 },
+          "easing": "easeInQuad"
+        }
+      ]
+    },
+    "player_intro": {
+      "name": "Player Introduction",
+      "description": "Character card reveal with stats overlay",
+      "duration_ms": 3000,
+      "phases": [
+        {
+          "name": "card_frame",
+          "duration_ms": 400,
+          "element": "frame",
+          "from": { "scale": 0, "rotation": 180 },
+          "to": { "scale": 1, "rotation": 0 },
+          "easing": "easeOutBack"
+        },
+        {
+          "name": "portrait_reveal",
+          "duration_ms": 600,
+          "delay_ms": 200,
+          "element": "portrait",
+          "effect": "venetian_blind_reveal",
+          "slices": 8,
+          "direction": "horizontal"
+        },
+        {
+          "name": "name_stamp",
+          "duration_ms": 200,
+          "delay_ms": 800,
+          "element": "text",
+          "content": "{character_name}",
+          "effect": "stamp_in",
+          "easing": "easeOutQuint",
+          "style": { "font": "bold", "size": 28, "color": "#ffffff" }
+        },
+        {
+          "name": "archetype_tag",
+          "duration_ms": 200,
+          "delay_ms": 1000,
+          "element": "text",
+          "content": "{archetype}",
+          "from": { "x": "-50%", "opacity": 0 },
+          "to": { "x": "0%", "opacity": 1 },
+          "style": { "font": "italic", "size": 18, "color": "{aura_color}" }
+        },
+        {
+          "name": "stat_bars",
+          "duration_ms": 800,
+          "delay_ms": 1200,
+          "element": "stats",
+          "effect": "fill_bars",
+          "easing": "easeOutCubic",
+          "stagger_ms": 100
+        },
+        {
+          "name": "shimmer",
+          "duration_ms": 1000,
+          "delay_ms": 2000,
+          "effect": "card_shimmer",
+          "color": "{aura_color}",
+          "opacity": 0.3
+        }
+      ]
+    },
+    "rivalry_clash": {
+      "name": "Rivalry Clash",
+      "description": "Two characters face off with colliding energy",
+      "duration_ms": 2500,
+      "phases": [
+        {
+          "name": "left_slide",
+          "duration_ms": 500,
+          "element": "portrait_left",
+          "from": { "x": "-120%", "scale": 1.2 },
+          "to": { "x": "-10%", "scale": 1.0 },
+          "easing": "easeOutExpo"
+        },
+        {
+          "name": "right_slide",
+          "duration_ms": 500,
+          "element": "portrait_right",
+          "from": { "x": "120%", "scale": 1.2 },
+          "to": { "x": "10%", "scale": 1.0 },
+          "easing": "easeOutExpo"
+        },
+        {
+          "name": "vs_stamp",
+          "duration_ms": 200,
+          "delay_ms": 500,
+          "element": "text",
+          "content": "VS",
+          "effect": "stamp_in",
+          "style": { "font": "bold", "size": 64, "color": "#ff2d78", "stroke": "#ffffff" }
+        },
+        {
+          "name": "energy_collision",
+          "duration_ms": 800,
+          "delay_ms": 600,
+          "effect": "energy_clash",
+          "left_color": "{left_aura_color}",
+          "right_color": "{right_aura_color}",
+          "center": "50%"
+        },
+        {
+          "name": "screen_crack",
+          "duration_ms": 200,
+          "delay_ms": 1200,
+          "effect": "screen_crack",
+          "origin": "center",
+          "fragments": 12
+        },
+        {
+          "name": "shatter_fade",
+          "duration_ms": 800,
+          "delay_ms": 1700,
+          "element": "all",
+          "effect": "shatter_transition",
+          "easing": "easeInQuad"
+        }
+      ]
+    }
+  }
+}
