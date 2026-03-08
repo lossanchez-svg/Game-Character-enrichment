@@ -1,5 +1,245 @@
 {
   "version": 1,
-  "characters": [],
-  "_comment": "Character entries are added by the /character command. Schema: { key, name, role, archetype, gender, age, appearance: { hair_style, hair_color, eye_color, skin_tone, face_shape }, traits: [], prompt_used: string, created_at: ISO date, deployed_to: [] }"
+  "characters": [
+    {
+      "key": "char_child",
+      "name": "Alex (Your Child)",
+      "role": "player",
+      "archetype": "late_bloomer",
+      "gender": "neutral",
+      "age": 10,
+      "appearance": {
+        "hair_style": "spiky",
+        "hair_color": "brown",
+        "eye_color": "green",
+        "skin_tone": "medium_light",
+        "face_shape": "round_soft"
+      },
+      "traits": ["determined", "growing", "raw potential"],
+      "jersey_color": "blue",
+      "jersey_number": 10,
+      "created_at": "2026-03-08T00:00:00Z",
+      "deployed_to": []
+    },
+    {
+      "key": "char_child_male",
+      "name": "Son (Your Boy)",
+      "role": "player",
+      "archetype": "speedster",
+      "gender": "male",
+      "age": 10,
+      "appearance": {
+        "hair_style": "spiky_wild",
+        "hair_color": "dark_brown",
+        "eye_color": "green",
+        "skin_tone": "medium_light",
+        "face_shape": "angular"
+      },
+      "traits": ["competitive", "energetic", "passionate"],
+      "jersey_color": "blue",
+      "jersey_number": 10,
+      "created_at": "2026-03-08T00:00:00Z",
+      "deployed_to": []
+    },
+    {
+      "key": "char_child_female",
+      "name": "Daughter (Your Girl)",
+      "role": "player",
+      "archetype": "flair_merchant",
+      "gender": "female",
+      "age": 10,
+      "appearance": {
+        "hair_style": "long_flowing",
+        "hair_color": "dark_brown",
+        "eye_color": "violet",
+        "skin_tone": "medium_light",
+        "face_shape": "heart"
+      },
+      "traits": ["expressive", "creative", "dynamic"],
+      "jersey_color": "pink",
+      "jersey_number": 10,
+      "created_at": "2026-03-08T00:00:00Z",
+      "deployed_to": []
+    },
+    {
+      "key": "char_coach",
+      "name": "Coach Martinez",
+      "role": "coach",
+      "archetype": null,
+      "gender": "male",
+      "age": 42,
+      "appearance": {
+        "hair_style": "slicked",
+        "hair_color": "black",
+        "eye_color": "brown",
+        "skin_tone": "medium",
+        "face_shape": "square_strong"
+      },
+      "traits": ["tactical", "firm", "experienced", "structured"],
+      "jersey_color": "red",
+      "jersey_number": null,
+      "created_at": "2026-03-08T00:00:00Z",
+      "deployed_to": []
+    },
+    {
+      "key": "char_karen",
+      "name": "Karen W.",
+      "role": "parent",
+      "archetype": null,
+      "gender": "female",
+      "age": 38,
+      "appearance": {
+        "hair_style": "bob_sharp",
+        "hair_color": "blonde",
+        "eye_color": "blue",
+        "skin_tone": "fair",
+        "face_shape": "diamond"
+      },
+      "traits": ["organized", "overbearing", "controlling", "intense"],
+      "jersey_color": "purple",
+      "jersey_number": null,
+      "created_at": "2026-03-08T00:00:00Z",
+      "deployed_to": []
+    },
+    {
+      "key": "char_brad",
+      "name": "Brad T.",
+      "role": "parent",
+      "archetype": null,
+      "gender": "male",
+      "age": 40,
+      "appearance": {
+        "hair_style": "short_clean",
+        "hair_color": "brown",
+        "eye_color": "hazel",
+        "skin_tone": "light",
+        "face_shape": "square_strong"
+      },
+      "traits": ["competitive", "smug", "dismissive", "alpha"],
+      "jersey_color": "orange",
+      "jersey_number": null,
+      "created_at": "2026-03-08T00:00:00Z",
+      "deployed_to": []
+    },
+    {
+      "key": "char_mike",
+      "name": "Mike D.",
+      "role": "parent",
+      "archetype": null,
+      "gender": "male",
+      "age": 36,
+      "appearance": {
+        "hair_style": "messy",
+        "hair_color": "dark_brown",
+        "eye_color": "brown",
+        "skin_tone": "medium",
+        "face_shape": "round_soft"
+      },
+      "traits": ["supportive", "humorous", "practical", "warm"],
+      "jersey_color": "green",
+      "jersey_number": null,
+      "created_at": "2026-03-08T00:00:00Z",
+      "deployed_to": []
+    },
+    {
+      "key": "char_spouse",
+      "name": "Your Partner",
+      "role": "parent",
+      "archetype": null,
+      "gender": "neutral",
+      "age": 35,
+      "appearance": {
+        "hair_style": "medium_swept",
+        "hair_color": "dark_brown",
+        "eye_color": "amber",
+        "skin_tone": "medium_light",
+        "face_shape": "oval"
+      },
+      "traits": ["supportive", "balanced", "caring"],
+      "jersey_color": "orange",
+      "jersey_number": null,
+      "created_at": "2026-03-08T00:00:00Z",
+      "deployed_to": []
+    },
+    {
+      "key": "char_spouse_male",
+      "name": "Husband",
+      "role": "parent",
+      "archetype": null,
+      "gender": "male",
+      "age": 37,
+      "appearance": {
+        "hair_style": "short_clean",
+        "hair_color": "dark_brown",
+        "eye_color": "hazel",
+        "skin_tone": "medium",
+        "face_shape": "angular"
+      },
+      "traits": ["supportive", "concerned", "practical"],
+      "jersey_color": "blue",
+      "jersey_number": null,
+      "created_at": "2026-03-08T00:00:00Z",
+      "deployed_to": []
+    },
+    {
+      "key": "char_spouse_female",
+      "name": "Wife",
+      "role": "parent",
+      "archetype": null,
+      "gender": "female",
+      "age": 35,
+      "appearance": {
+        "hair_style": "long_flowing",
+        "hair_color": "dark_brown",
+        "eye_color": "green",
+        "skin_tone": "medium_light",
+        "face_shape": "heart"
+      },
+      "traits": ["supportive", "nurturing", "concerned"],
+      "jersey_color": "pink",
+      "jersey_number": null,
+      "created_at": "2026-03-08T00:00:00Z",
+      "deployed_to": []
+    },
+    {
+      "key": "char_referee",
+      "name": "Ref Taylor",
+      "role": "npc",
+      "archetype": null,
+      "gender": "male",
+      "age": 19,
+      "appearance": {
+        "hair_style": "short_clean",
+        "hair_color": "red",
+        "eye_color": "green",
+        "skin_tone": "medium",
+        "face_shape": "oval"
+      },
+      "traits": ["authoritative", "nervous", "young"],
+      "jersey_color": "black",
+      "jersey_number": null,
+      "created_at": "2026-03-08T00:00:00Z",
+      "deployed_to": []
+    },
+    {
+      "key": "char_scout",
+      "name": "Scout Adams",
+      "role": "npc",
+      "archetype": null,
+      "gender": "male",
+      "age": 45,
+      "appearance": {
+        "hair_style": "short_clean",
+        "hair_color": "silver",
+        "eye_color": "hazel",
+        "skin_tone": "medium",
+        "face_shape": "long"
+      },
+      "traits": ["analytical", "observant", "professional", "discreet"],
+      "jersey_color": "gray",
+      "jersey_number": null,
+      "created_at": "2026-03-08T00:00:00Z",
+      "deployed_to": []
+    }
+  ]
 }
