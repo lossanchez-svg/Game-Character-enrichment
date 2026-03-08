@@ -1,10 +1,5 @@
 node_modules/
 .DS_Store
-raw/*.png
-raw/*.jpg
-raw/*.jpeg
-raw/*.bmp
-raw/*.tiff
 !raw/.gitkeep
 processed/
 *.log
